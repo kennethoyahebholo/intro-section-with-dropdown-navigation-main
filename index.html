@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <nav>
+    <section class="logo__con">
+      <img src="./images/logo.svg" alt="">
+      <ul>
+        <li class="feat_hover"><a href="#">Features<img class="dropIcon" src="./images/icon-arrow-down.svg" alt=""></a>
+          <ul class="featUl none">
+            <li><a href="#"><img src="./images/icon-todo.svg" alt="">Todo List</a></li>
+            <li><a href="#"><img src="./images/icon-calendar.svg" alt="">Calender</a></li>
+            <li><a href="#"><img src="./images/icon-reminders.svg" alt="">Reminder</a></li>
+            <li><a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a></li>
+          </ul>                
+        </li>
+        <li class="comp_hover"><a href="#">Company <img class="dropIcon2" src="./images/icon-arrow-down.svg" alt=""></a>
+         <ul class="compUl none">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers </a></li>
+        <li><a href="#">About </a></li>
+      </ul>
+    </section>
+    <section class="menu-drop">
+      <label class="menu_icon_open">
+        <img src="./images/icon-menu.svg" alt="">
+      </label>      
+      <ul>
+        <li><a href="">Login </a></li>
+        <button>Register </button>
+      </ul>
+    </section>
+  </nav>
+
+  <main class="wrapper">
+    <section class="container">
+      <div class="right__content">
+        <div class="img__con_mobile"><img src="./images/image-hero-mobile.png" alt=""></div>
+
+        <div class="img__con_desktop"><img src="./images/image-hero-desktop.png" alt=""></div>       
+        
+      </div>
+      <div class="left__content">
+        <div class="first__con">
+          <h2>Make remote work</h2>
+          <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <div class="btn__con">
+          <button class="btn">Learn More</button>
+          </div>          
+        </div>
+        <div class="svg__con">
+          <img class="mb-7" src="./images/client-audiophile.svg" alt="">
+          <img class="mb-7" src="./images/client-databiz.svg" alt="">
+          <img class="mb-7" src="./images/client-maker.svg" alt="">
+          <img class="mb-7" src="./images/client-meet.svg" alt="">
+        </div>        
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Oyahebholo Kenneth Izosea</a>.
+    </div>
+  </main>
+  <div class="nav_modal none"></div>
+  <div class="modal_out none">
+    <div class="close_menu_con">
+      <button class="menu_icon_close">
+        <img src="./images/icon-close-menu.svg" alt="">
+      </button>      
+    </div>
+    <div class="nav__con">
+      <ul>
+        <li class="feat_drop"><a href="#">Features<img src="./images/icon-arrow-down.svg" alt=""></a>
+          <ul class="feat_details none">
+            <li><a href="#"><img src="./images/icon-todo.svg" alt="">Todo List</a></li>
+            <li><a href="#"><img src="./images/icon-calendar.svg" alt="">Calender</a></li>
+            <li><a href="#"><img src="./images/icon-reminders.svg" alt="">Reminder</a></li>
+            <li><a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a></li>
+          </ul>        
+        </li>
+        <li class="comp_drop"><a href="#">Company <img src="./images/icon-arrow-down.svg" alt=""></a>
+        <ul class="comp_details none">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers </a></li>
+        <li><a href="#">About </a></li>
+    </ul>
+    </div>
+
+    <div class="nav-drop">
+      <ul>
+        <li><a href="">Login </a></li>
+        <button>Register </button>
+    </ul>
+    </div>
+    
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
